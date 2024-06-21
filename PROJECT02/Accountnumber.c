@@ -3,7 +3,7 @@
 
 
 typedef struct {
-    long long int accountNumber;
+     int accountNumber;
     char accountHolderName[50];
 }
 
@@ -22,15 +22,15 @@ BankAccount createAccount()
     BankAccount account;
 
     printf("Enter account number 11 digits only : ");
-    scanf("%lld", &account.accountNumber);
+    scanf("%d", &account.accountNumber);
     while (!isValidAccountNumber(account.accountNumber))
      {
         printf("Invalid account number. Please enter an 11-digit account number only: ");
-        scanf("%lld", &account.accountNumber);
+        scanf("%d", &account.accountNumber);
     }
 
     printf("Enter account holder name: ");
-    scanf(" %[^\n]s", account.accountHolderName); 
+    scanf("%s",&account.accountHolderName); 
 
     return account;
 }
@@ -38,7 +38,7 @@ BankAccount createAccount()
 
 void displayAccount(BankAccount account) 
 {
-    printf("\nAccount Number: %lld\n", account.accountNumber);
+    printf("\nAccount Number: %d\n", account.accountNumber);
     printf("Account Holder Name: %s\n", account.accountHolderName);
 }
 
@@ -46,11 +46,10 @@ void displayAccount(BankAccount account)
 int main()  
 {
     BankAccount account;
-
+ 
     printf("*** Project Banking Management System ***\n");
-    printf("Please enter task number 1\n");
-    
-
+    printf("Please enter task number  \n");
+  
     account = createAccount();
 
     printf("\n***** Welcome, %s. Your account is created *****\n\n", account.accountHolderName);
@@ -59,3 +58,5 @@ int main()
 
     return 0;
 }
+
+
