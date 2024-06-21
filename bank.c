@@ -2,7 +2,7 @@
 #include <conio.h>
 #include <stdlib.h>
 int list();
-//void create();
+
 void deposit();
 void withdraw();
 void createaccount();
@@ -87,7 +87,7 @@ void check()
     printf("\nTotal Withdraw Amount =%d", totalwithdraw);
 }
 void createaccount()
-{
+{  
     typedef struct 
     {
         long long int accountNumber;
@@ -117,7 +117,7 @@ void createaccount()
         }
 
         printf("Enter account holder name: ");
-        scanf(" %[^\n]s", account.accountHolderName); 
+        scanf(" %s", account.accountHolderName); 
 
         return account;
     }
@@ -125,7 +125,7 @@ void createaccount()
 
     void displayAccount(BankAccount account) 
     {
-        printf("\nAccount Number: %lld\n", account.accountNumber);
+        printf("\nAccount Number: %d\n", account.accountNumber);
         printf("Account Holder Name: %s\n", account.accountHolderName);
     }
 
