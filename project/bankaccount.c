@@ -23,7 +23,7 @@ int main()
     {
         printf("\nPlease Enter the task number: ");
         scanf("%d", &task);
-
+        getchar();
         if (task == 1)
         {
             if (account_no == 0)
@@ -159,10 +159,7 @@ int main()
             exit = task;
         }
 
-        else
-        {
-            printf(RED "\nOhh! Please Enter valid task no\n" RESET);
-        }
+        
     }
 
     printf(RED "\nYou Have Left This Project" RESET);
