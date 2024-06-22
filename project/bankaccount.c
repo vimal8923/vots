@@ -165,7 +165,7 @@ int main()
         }
     }
 
-    printf(RED "\nYou Have Left This Project" RESET, task);
+    printf(RED "\nYou Have Left This Project" RESET);
 
     return 0;
 }
