@@ -1,3 +1,7 @@
+
+
+// this is banking managment system project 
+
 #include<stdio.h>
 
 
