@@ -5,7 +5,7 @@
 #define RESET "\x1B[0m"
 int main()
 {
-    int task, exit = 1;
+    char task, exit = '1';
     int deposit, withdraw;
 
     char name[20];
@@ -19,13 +19,13 @@ int main()
     printf("\n4- Check Balance");
     printf("\n0- Exit\n");
 
-    while (exit != 0)
+    while (exit != '0')
     {
         printf("\nPlease Enter the task number: ");
-        scanf("%d", &task);
-        getchar();
+        scanf("%c", &task);
+        
 
-        if (task == 1)
+        if (task == '1')
         {
             if (account_no == 0)
             {
@@ -88,7 +88,7 @@ int main()
             }
         }
 
-        else if (task == 2)
+        else if (task == '2')
         {
 
             if (account_no > 10000000000 && account_no < 100000000000)
@@ -120,7 +120,7 @@ int main()
             }
         }
 
-        else if (task == 3)
+        else if (task == '3')
         {
             if (account_no > 10000000000 && account_no < 100000000000)
             {
@@ -143,7 +143,7 @@ int main()
             }
         }
 
-        else if (task == 4)
+        else if (task == '4')
         {
             if (account_no > 10000000000 && account_no < 100000000000)
             {
@@ -155,7 +155,7 @@ int main()
                 printf(RED "\nError - Sorry! Please Create Customer Account First....\n" RESET, balance);
             }
         }
-        else if (task == 0)
+        else if (task == '0')
         {
             exit = task;
         }
