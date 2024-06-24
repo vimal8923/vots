@@ -23,6 +23,7 @@ int main()
     {
         printf("\nPlease Enter the task number: ");
         scanf("%d", &task);
+        getchar();
 
         if (task == 1)
         {
