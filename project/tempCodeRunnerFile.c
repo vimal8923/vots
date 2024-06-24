@@ -1,1 +1,0 @@
-#define RESET "\x1B[0m"
