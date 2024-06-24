@@ -21,8 +21,9 @@ int main()
 
     while (exit != '0')
     {
+
         printf("\nPlease Enter the task number: ");
-        scanf("%c", &task);
+         scanf("%c", &task);
         
 
         if (task == '1')
